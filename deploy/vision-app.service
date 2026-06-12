@@ -1,0 +1,14 @@
+[Unit]
+Description=PiZero Vision API
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/VisionProject
+Environment=PATH=/home/pi/VisionProject/.venv/bin:/usr/bin
+ExecStart=/home/pi/VisionProject/.venv/bin/uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --workers 1
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -4,7 +4,7 @@ set -euo pipefail
 # Apt dependencies (run as root / sudo)
 # Note: On Pi Zero 2W, install system packages for best compatibility
 apt update
-apt install -y python3-venv python3-pip tesseract-ocr libzbar0 libtiff5 libjpeg8 libatlas-base-dev
+apt install -y python3-venv python3-pip tesseract-ocr libzbar0 libtiff5 libjpeg8 libopenblas-dev
 
 # Create venv and install python deps
 python3 -m venv .venv

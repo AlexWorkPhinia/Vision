@@ -14,7 +14,7 @@ Quickstart (development)
 
 1. Clone repository and change to project root
 2. Install system deps (Ubuntu/Raspbian):
-   sudo apt update && sudo apt install -y python3-venv python3-pip tesseract-ocr libzbar0 libatlas-base-dev
+   sudo apt update && sudo apt install -y python3-venv python3-pip tesseract-ocr libzbar0 libopenblas-dev
 
 3. Run setup script:
    bash scripts/setup_env.sh
